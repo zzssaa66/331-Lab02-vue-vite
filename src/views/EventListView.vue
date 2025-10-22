@@ -1,18 +1,19 @@
 <script setup lang="ts">
 import EventCard from '@/components/EventCard.vue'
-import EventDetails from '@/components/EventDetails.vue'
 import type { Event } from '@/types'
 import { ref, onMounted } from 'vue'
-import { eventService } from '@/services/eventService'
+import EventService from '@/services/EventService'
 
-const events = ref<Event[]>([])
+const events = ref<Event[]>(null)
 
-onMounted(async () => {
-  try {
-    events.value = await eventService.getEvents()
-  } catch (error) {
-    console.error('Failed to fetch events:', error)
-  }
+onMounted(() => {
+  EventService.getEvents()
+    .then((response) => {
+      events.value = response.data
+    })
+    .catch((error) => {
+      console.error('There was an error!', error)
+    })
 })
 </script>
 
@@ -21,7 +22,6 @@ onMounted(async () => {
   <!-- new element -->
   <div class="events">
     <EventCard v-for="event in events" :key="event.id" :event="event" />
-    <EventDetails v-for="event in events" :key="`details-${event.id}`" :event="event" />
   </div>
 </template>
 

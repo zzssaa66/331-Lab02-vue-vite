@@ -28,7 +28,7 @@ const hasNextPage = computed(() => {
   return page.value < totalPages
 })
 
-const changePageSize = (event: Event) => {
+const changePageSize = (event: any) => {
   const target = event.target as HTMLSelectElement
   const newPerPage = parseInt(target.value)
   router.push({ 

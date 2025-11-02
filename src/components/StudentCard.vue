@@ -7,32 +7,9 @@ defineProps<{
 
 <template>
   <div class="student-class">
-    <div class="student-card">
-      <h2>{{ student.name }} {{ student.surname }}</h2>
-      <span>GPA: {{ student.gpa }}</span>
+    <div class="p-5 w-[250px] cursor-pointer border border-gray-600 mb-[18px] bg-gray-50 hover:scale-101 hover:shadow-lg">
+      <h2 class="mb-[10px] text-gray-700">{{ student.name }} {{ student.surname }}</h2>
+      <span class="font-bold text-green-600">GPA: {{ student.gpa }}</span>
     </div>
   </div>
 </template>
-
-<style scoped>
-.student-card {
-  padding: 20px;
-  width: 250px;
-  cursor: pointer;
-  border: 1px solid #39495c;
-  margin-bottom: 18px;
-  background-color: #f9f9f9;
-}
-.student-card:hover {
-  transform: scale(1.01);
-  box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.2);
-}
-.student-card h2 {
-  margin-bottom: 10px;
-  color: #2c3e50;
-}
-.student-card span {
-  font-weight: bold;
-  color: #42b983;
-}
-</style>

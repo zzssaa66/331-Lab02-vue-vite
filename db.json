@@ -43,6 +43,72 @@
       "time": "14:00",
       "petsAllowed": false,
       "organizer": "Code Master"
+    },
+    {
+      "id": 1234567,
+      "category": "music",
+      "title": "Jazz Night",
+      "description": "Enjoy smooth jazz performances by local artists.",
+      "location": "Blue Note Cafe",
+      "date": "February 10, 2025",
+      "time": "19:00",
+      "petsAllowed": false,
+      "organizer": "Music Lover"
+    },
+    {
+      "id": 2345678,
+      "category": "sports",
+      "title": "Marathon Training",
+      "description": "Join our weekly marathon training sessions.",
+      "location": "City Park",
+      "date": "March 5, 2025",
+      "time": "06:00",
+      "petsAllowed": true,
+      "organizer": "Run Fast"
+    },
+    {
+      "id": 3456789,
+      "category": "art",
+      "title": "Painting Workshop",
+      "description": "Learn watercolor techniques with professional artists.",
+      "location": "Art Studio",
+      "date": "April 12, 2025",
+      "time": "15:00",
+      "petsAllowed": false,
+      "organizer": "Paint Master"
+    },
+    {
+      "id": 4567890,
+      "category": "technology",
+      "title": "AI Conference",
+      "description": "Explore the latest developments in artificial intelligence.",
+      "location": "Convention Center",
+      "date": "May 20, 2025",
+      "time": "09:00",
+      "petsAllowed": false,
+      "organizer": "Tech Innovator"
+    },
+    {
+      "id": 5678901,
+      "category": "health",
+      "title": "Yoga Session",
+      "description": "Relax and rejuvenate with our morning yoga class.",
+      "location": "Wellness Center",
+      "date": "June 8, 2025",
+      "time": "07:00",
+      "petsAllowed": false,
+      "organizer": "Zen Master"
+    },
+    {
+      "id": 6789012,
+      "category": "food",
+      "title": "Cooking Class",
+      "description": "Learn to cook authentic Italian cuisine.",
+      "location": "Culinary School",
+      "date": "July 15, 2025",
+      "time": "18:00",
+      "petsAllowed": false,
+      "organizer": "Chef Antonio"
     }
   ]
 }
